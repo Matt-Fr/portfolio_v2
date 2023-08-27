@@ -16,13 +16,13 @@ const SectionPresentation = () => {
         <div className=" my-4 flex">
           <Link
             href="/"
-            className=" text-sm py-4 px-3 bg-primary shadow-black rounded mr-3  ease-out duration-300 hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
+            className=" font-bold text-sm py-4 px-3 bg-primary shadow-black rounded mr-3  ease-out duration-300 hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
           >
             Voir mes projets
           </Link>
           <Link
             href="/"
-            className=" text-sm py-4 px-3 bg-white shadow-primary border rounded ease-out duration-300 hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
+            className=" font-bold text-sm py-4 px-3 bg-white shadow-primary border rounded ease-out duration-300 hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
           >
             Contactez-moi
           </Link>
