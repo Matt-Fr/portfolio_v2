@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       boxShadow: {
-        black: "2px 3px 0px rgba(0, 0, 0)",
+        black: "2px 3px 0px",
+        primary: "2px 3px 0px",
       },
     },
 

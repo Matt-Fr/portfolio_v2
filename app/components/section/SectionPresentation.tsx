@@ -4,7 +4,7 @@ import React from "react";
 const SectionPresentation = () => {
   return (
     <section className=" m-8 ">
-      <div>
+      <div className="flex flex-col items-center">
         <h1 className=" text-3xl">Matthieu Franck</h1>
         <h2 className="[text-shadow:_2px_3px_0_rgb(128_244_220_/100%)] text-2xl ">
           Développeur Front-end
@@ -22,7 +22,7 @@ const SectionPresentation = () => {
           </Link>
           <Link
             href="/"
-            className=" text-sm py-4 px-3 bg-primary shadow-black rounded"
+            className=" text-sm py-4 px-3 bg-white shadow-primary border rounded"
           >
             Contacter moi
           </Link>
