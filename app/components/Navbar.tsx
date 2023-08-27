@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
   return (
-    <header className=" flex justify-between">
+    <header className=" flex justify-between shadow-sm">
       <button>email</button>
       <button>logo</button>
       <button
