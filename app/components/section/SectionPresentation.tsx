@@ -13,18 +13,18 @@ const SectionPresentation = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat illo
           ex est quos recusandae at nostrum enim cum? Porro, repellat.
         </p>
-        <div className=" my-4">
+        <div className=" my-4 flex">
           <Link
             href="/"
-            className=" text-sm py-4 px-3 bg-primary shadow-black rounded mr-3"
+            className=" text-sm py-4 px-3 bg-primary shadow-black rounded mr-3  ease-out duration-300 hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
           >
             Voir mes projets
           </Link>
           <Link
             href="/"
-            className=" text-sm py-4 px-3 bg-white shadow-primary border rounded"
+            className=" text-sm py-4 px-3 bg-white shadow-primary border rounded ease-out duration-300 hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
           >
-            Contacter moi
+            Contactez-moi
           </Link>
         </div>
       </div>
