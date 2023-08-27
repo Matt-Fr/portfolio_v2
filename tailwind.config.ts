@@ -11,6 +11,7 @@ const config: Config = {
       boxShadow: {
         black: "2px 3px 0px",
         primary: "2px 3px 0px",
+        header: "0px 4px 20px rgba(0, 0, 0, 0.05)",
       },
     },
 
