@@ -5,7 +5,7 @@ import authorPic from "@/app/assets/picAuthor.jpg";
 
 const SectionPresentation = () => {
   return (
-    <section className=" m-8 flex flex-col items-center ">
+    <section className=" m-8 md:m-10 flex flex-col items-center md:flex-row lg:m-14 md:items-start  ">
       <div className="flex flex-col items-center">
         <h1 className=" text-3xl md:text-5xl">Matthieu Franck</h1>
         <h2 className="[text-shadow:_2px_3px_0_rgb(128_244_220_/100%)] text-2xl md:text-4xl">
@@ -30,7 +30,7 @@ const SectionPresentation = () => {
           </Link>
         </div>
       </div>
-      <div className=" w-3/4 h-96 overflow-hidden flex justify-center border-2 rounded-2xl  shadow-black ease-out duration-300 hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
+      <div className=" w-3/4 h-96 overflow-hidden flex justify-center border-2 rounded-2xl  shadow-black ease-out duration-300 hover:translate-x-1 hover:translate-y-1 hover:shadow-none lg:h-3/5 lg:w-1/4">
         <Image
           alt="author picture"
           src={authorPic}
