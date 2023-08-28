@@ -31,7 +31,7 @@ const SectionPresentation = () => {
         </div>
       </div>
       <div className=" w-full md:w-1/2 flex justify-center items-center h-full ">
-        <div className="overflow-hidden border-2 rounded-2xl  shadow-black ease-out duration-300 hover:translate-x-1 hover:translate-y-1 hover:shadow-none w-3/4 max-h-96 flex justify-center items-center max-w-sm ">
+        <div className="overflow-hidden border-2 rounded-2xl  shadow-black ease-out duration-300 hover:translate-x-1 hover:translate-y-1 hover:shadow-none w-3/4 max-h-96 flex justify-center items-center max-w-sm lg:w-2/5 ">
           <Image
             alt="author picture"
             src={authorPic}
