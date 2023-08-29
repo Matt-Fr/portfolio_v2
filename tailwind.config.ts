@@ -13,6 +13,9 @@ const config: Config = {
         primary: "2px 3px 0px",
         header: "0px 4px 20px rgba(0, 0, 0, 0.05)",
       },
+      backgroundImage: {
+        grey: "url('../app/assets/bg-full.svg')",
+      },
     },
 
     colors: {
