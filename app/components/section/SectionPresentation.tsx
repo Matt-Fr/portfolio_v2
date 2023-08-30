@@ -12,8 +12,10 @@ const SectionPresentation = () => {
           Développeur Front-end
         </h2>
         <p className=" my-5 md:text-lg">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat illo
-          ex est quos recusandae at nostrum enim cum? Porro, repellat.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. In magni
+          rerum accusamus nostrum dolore, repellat reprehenderit tempora ex
+          voluptates fugit ipsa voluptas facere ab molestiae! Quisquam eum
+          repellat dignissimos facilis.
         </p>
         <div className=" my-4 flex">
           <Link
