@@ -1,7 +1,13 @@
 import React from "react";
 
 interface project {
-  title: string;
+  title?: string;
+  id?: number;
+  picture?: any;
+  descriptionFr?: string;
+  tags?: string[];
+  demo?: string;
+  linkGithub?: string;
 }
 
 const ProjectArticle: React.FC<project> = ({ title }) => {
