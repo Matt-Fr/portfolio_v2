@@ -37,7 +37,7 @@ const myData = [
     descriptionEn:
       "The Sportsee application is a dashboard which uses data (calories burned, length of workout, etc.) from an external API to create data visualizations of the athletic performances of two individuals. The graphs were created using the Recharts library and the state management using a context hook. The welcome interface contains four buttons for the two individuals: two buttons bring the user to the data visualizations based on the external API, and two buttons also display data visualizations for the same two individuals but this time pulling mock data. The application is not designed for tablet or mobile use (1024 pixels or higher).",
     descriptionFr:
-      "L’application Sportsee est un Dashboard utilisant les données d’une API externe et permettant de visualiser les performances sportives des utilisateurs. Les graphs ont été réalisés grâce à la librairie Recharts et le state management grâce à un context. L’interface de l’accueil nous renvoie vers les données de deux utilisateurs (soit venant des données de l’API, soit des données mockées). L’application n’est pas conçue pour tablette et mobile (1024 pixels et plus).",
+      "L’application Sportsee est un Dashboard utilisant les données d’une API externe et permettant de visualiser les performances sportives des utilisateurs. Les graphs ont été réalisés grâce à la librairie Recharts et le state management grâce à un context. L’interface de l’accueil nous renvoie vers les données de deux utilisateurs (soit venant des données de l’API, soit des données mockées).",
     tags: ["React", "React Router", "Context", "Recharts"],
     demo: "https://mattfr-sportsee.netlify.app/",
     linkGithub: "https://github.com/Matt-Fr/Franck_Matthieu_12_17052022",

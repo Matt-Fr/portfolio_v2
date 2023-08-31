@@ -21,14 +21,20 @@ const ProjectArticle: React.FC<project> = ({
   linkGithub,
 }) => {
   return (
-    <article>
-      <Image src={picture} alt={`picture of the project ${title}`}></Image>
-      <div>
+    <article className="flex flex-col  border-2 rounded-2xl  hover:shadow-secondary ease-out duration-300 hover:translate-x-[-0.25rem] hover:translate-y-[-0.25rem]  overflow-hidden h-[32rem]">
+      <Image
+        src={picture}
+        alt={`picture of the project ${title}`}
+        className=" min-w-full  object-cover h-1/2 object-top  "
+      ></Image>
+      <div className=" h-full flex flex-col p-5">
         <h2>{title}</h2>
-        {tags &&
-          tags.map((tag, index) => {
-            return <span key={index}>{tag}</span>;
-          })}
+        <div>
+          {tags &&
+            tags.map((tag, index) => {
+              return <span key={index}>{tag}</span>;
+            })}
+        </div>
         <p>{descriptionFr}</p>
         <div>
           {demo && (

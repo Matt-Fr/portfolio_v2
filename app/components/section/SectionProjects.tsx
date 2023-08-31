@@ -4,8 +4,10 @@ import ProjectArticle from "./ProjectArticle";
 
 const SectionProjects = () => {
   return (
-    <section className=" bg-grey lg:p-14 bg-cover h-full">
-      <h1>mes projets</h1>
+    <section className=" lg:p-14  grid grid-cols-1 p-8 gap-y-8">
+      <h1 className="[text-shadow:_2px_3px_0_rgb(70_140_247_/50%)] text-2xl md:text-3xl lg:text-4xl">
+        mes projets
+      </h1>
       {mydata.map((project) => {
         const { title, id, picture, descriptionFr, tags, demo, linkGithub } =
           project;
