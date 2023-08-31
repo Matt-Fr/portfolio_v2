@@ -21,7 +21,7 @@ const ProjectArticle: React.FC<project> = ({
   linkGithub,
 }) => {
   return (
-    <article className="flex flex-col  border-2 rounded-2xl  hover:shadow-secondary ease-out duration-300 hover:translate-x-[-0.25rem] hover:translate-y-[-0.25rem]  overflow-hidden h-[32rem]">
+    <article className="flex flex-col bg-white  border-2 rounded-2xl  hover:shadow-black ease-out duration-300 hover:translate-x-[-0.25rem] hover:translate-y-[-0.25rem]  overflow-hidden h-[32rem]">
       <Image
         src={picture}
         alt={`picture of the project ${title}`}

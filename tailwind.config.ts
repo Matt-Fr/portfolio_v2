@@ -14,9 +14,9 @@ const config: Config = {
         secondary: "2px 3px 0px",
         header: "0px 4px 20px rgba(0, 0, 0, 0.05)",
       },
-      backgroundImage: {
-        grey: "url('../app/assets/bg-full.svg')",
-      },
+      // backgroundImage: {
+      //   grey: "url('../app/assets/bg-full.svg')",
+      // },
     },
 
     colors: {
@@ -26,6 +26,7 @@ const config: Config = {
       primary: "#80f4dc",
       secondary: "#468CF7",
       black: "#000000",
+      grey: "#FAF9F9",
     },
   },
   plugins: [],
