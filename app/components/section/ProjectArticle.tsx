@@ -9,7 +9,7 @@ interface project {
   tags?: string[];
   demo?: string;
   linkGithub?: string;
-  logo?: string;
+  logo?: any;
 }
 
 const ProjectArticle: React.FC<project> = ({
