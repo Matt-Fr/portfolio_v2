@@ -46,7 +46,9 @@ const ProjectArticle: React.FC<project> = ({
               );
             })}
         </div>
-        <p>{descriptionFr}</p>
+        <p className=" text-sm  overflow-hidden line-clamp-6">
+          {descriptionFr}
+        </p>
         <div>
           {demo && (
             <a
