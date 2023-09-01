@@ -46,13 +46,13 @@ const ProjectArticle: React.FC<project> = ({
               );
             })}
         </div>
-        <p className=" text-sm  overflow-hidden line-clamp-6">
-          {descriptionFr}
+        <p className=" text-sm  overflow-hidden line-clamp-5 mb-4">
+          {descriptionFr} voir plus
         </p>
         <div>
           {demo && (
             <a
-              className="modalProject-info-elements-links-link"
+              className=" font-bold text-sm p-2 bg-secondary text-white shadow-black rounded mr-3  ease-out duration-300 hover:translate-x-1 hover:translate-y-1 hover:shadow-none md:text-base"
               href={demo}
               target="_blank"
               rel="noopener noreferrer"
@@ -60,12 +60,7 @@ const ProjectArticle: React.FC<project> = ({
               Demo
             </a>
           )}
-          <a
-            className="modalProject-info-elements-links-link"
-            href={linkGithub}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a className=" font-bold text-sm p-2 bg-white shadow-secondary border rounded ease-out duration-300 cursor-pointer hover:translate-x-1 hover:translate-y-1 hover:shadow-none md:text-base">
             Github
           </a>
         </div>
