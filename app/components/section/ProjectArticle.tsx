@@ -49,7 +49,7 @@ const ProjectArticle: React.FC<project> = ({
         <p className=" text-sm  overflow-hidden line-clamp-5 mb-4">
           {descriptionFr} voir plus
         </p>
-        <div>
+        <div className="flex">
           {demo && (
             <a
               className=" font-bold text-sm p-2 bg-secondary text-white shadow-black rounded mr-3  ease-out duration-300 hover:translate-x-1 hover:translate-y-1 hover:shadow-none md:text-base"
