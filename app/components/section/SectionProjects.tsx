@@ -9,8 +9,16 @@ const SectionProjects = () => {
         mes projets
       </h1>
       {mydata.map((project) => {
-        const { title, id, picture, descriptionFr, tags, demo, linkGithub } =
-          project;
+        const {
+          title,
+          id,
+          picture,
+          descriptionFr,
+          tags,
+          demo,
+          linkGithub,
+          logo,
+        } = project;
 
         return (
           <ProjectArticle
@@ -21,6 +29,7 @@ const SectionProjects = () => {
             tags={tags}
             demo={demo}
             linkGithub={linkGithub}
+            logo={logo}
           ></ProjectArticle>
         );
       })}
