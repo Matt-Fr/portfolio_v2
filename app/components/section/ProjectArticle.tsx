@@ -23,7 +23,7 @@ const ProjectArticle: React.FC<project> = ({
   logo,
 }) => {
   return (
-    <article className="flex flex-col bg-white border rounded-2xl border-secondary  shadow-black hover:shadow-bigBlack ease-out duration-300 hover:translate-x-[-0.25rem] hover:translate-y-[-0.25rem]  overflow-hidden h-[32rem]">
+    <article className="flex flex-col bg-white border rounded-2xl border-secondary  shadow-black hover:shadow-bigBlack ease-out duration-300 hover:translate-x-[-0.25rem] hover:translate-y-[-0.25rem]  overflow-hidden h-[32rem] max-w-sm">
       <div className="h-2/5 p-12 w-full  flex justify-center items-center">
         <Image
           src={logo}
