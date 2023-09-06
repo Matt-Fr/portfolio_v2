@@ -1,6 +1,6 @@
 import React from "react";
 import mydata from "@/app/myData";
-import ProjectArticle from "./ProjectArticle";
+import ProjectArticle from "../element/ProjectArticle";
 
 const SectionProjects = () => {
   return (
