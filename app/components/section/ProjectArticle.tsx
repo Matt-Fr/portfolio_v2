@@ -34,12 +34,6 @@ const ProjectArticle: React.FC<project> = ({
   return (
     <>
       <div>
-        <button
-          onClick={openModal}
-          className="bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 rounded"
-        >
-          open modal
-        </button>
         {isOpen && (
           <div className="fixed top-0 left-0 w-full bg-primary h-full flex items-center justify-center  bg-opacity-50 z-50">
             <div className="bg-white p-6 rounded shadow-md">
@@ -55,11 +49,14 @@ const ProjectArticle: React.FC<project> = ({
         )}
       </div>
       <article className="flex flex-col bg-white border rounded-2xl border-secondary  shadow-black hover:shadow-bigBlack ease-out duration-300 hover:translate-x-[-0.25rem] hover:translate-y-[-0.25rem]  overflow-hidden h-[32rem] max-w-sm">
-        <div className="h-2/5 p-12 w-full  flex justify-center items-center">
+        <div
+          onClick={openModal}
+          className="h-2/5 p-12 w-full  flex justify-center items-center cursor-pointer"
+        >
           <Image
             src={logo}
             alt={`picture of the project ${title}`}
-            className=" w-full h-full   "
+            className=" w-full h-full cursor-pointer  "
           ></Image>
         </div>
         <div className=" h-3/5 flex flex-col p-5">
@@ -78,7 +75,7 @@ const ProjectArticle: React.FC<project> = ({
                 );
               })}
           </div>
-          <p className=" text-sm  overflow-hidden line-clamp-5 mb-4">
+          <p className=" text-sm  overflow-hidden line-clamp-5 mb-4 cursor-pointer">
             {descriptionFr}
           </p>
           <div className="flex">
