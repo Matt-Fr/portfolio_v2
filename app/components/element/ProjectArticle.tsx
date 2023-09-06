@@ -54,7 +54,7 @@ const ProjectArticle: React.FC<project> = ({
       {isOpen && (
         <div
           onClick={closeModal}
-          className="fixed top-0 right-0 w-full  bg-primary h-full flex items-center justify-center  bg-opacity-50 z-50 "
+          className="fixed top-0 right-0 w-full  bg-black h-full flex items-center justify-center  bg-opacity-50 z-50 "
         >
           <div className="bg-white p-8 flex flex-col   justify-evenly md:w-1/2 relative rounded h-full   shadow-md">
             <span
