@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 interface project {
   title?: string;
@@ -28,6 +28,24 @@ const ProjectArticle: React.FC<project> = ({
     setIsOpen(true);
   };
 
+  //useEffect to allow the esc key to close the modal
+  const handleEscKey = (event: KeyboardEvent) => {
+    if (event.key === "Escape") {
+      closeModal();
+    }
+  };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.addEventListener("keydown", handleEscKey);
+    } else {
+      document.removeEventListener("keydown", handleEscKey);
+    }
+    return () => {
+      document.removeEventListener("keydown", handleEscKey);
+    };
+  }, [isOpen]);
+
   const closeModal = () => {
     setIsOpen(false);
   };
@@ -36,14 +54,48 @@ const ProjectArticle: React.FC<project> = ({
       <div>
         {isOpen && (
           <div className="fixed top-0 left-0 w-full bg-primary h-full flex items-center justify-center  bg-opacity-50 z-50">
-            <div className="bg-white p-6 rounded shadow-md">
+            <div className="bg-white p-6 rounded h-full  shadow-md">
               <span
-                className="absolute top-0 right-0 mt-2 mr-2 cursor-pointer"
+                className="absolute top-0 right-0 mt-2 mr-2 cursor-pointer text-3xl"
                 onClick={closeModal}
               >
                 &times;
               </span>
+              <Image
+                src={picture}
+                alt={`picture of the project ${title}`}
+                className=" w-full cursor-pointer  "
+              ></Image>
               <h2>{title}</h2>
+              <div className="flex flex-wrap">
+                {tags &&
+                  tags.map((tag, index) => {
+                    return (
+                      <span
+                        className=" text-sm border  rounded-sm py-[2px] px-[5px] mr-2 mb-2"
+                        key={index}
+                      >
+                        {tag}
+                      </span>
+                    );
+                  })}
+              </div>
+              <div className="flex">
+                {demo && (
+                  <a
+                    className=" font-bold text-sm p-2 bg-secondary text-white shadow-black rounded mr-3  ease-out duration-300 hover:translate-x-1 hover:translate-y-1 hover:shadow-none md:text-base"
+                    href={demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Demo
+                  </a>
+                )}
+                <a className=" font-bold text-sm p-2 bg-white shadow-secondary border rounded ease-out duration-300 cursor-pointer hover:translate-x-1 hover:translate-y-1 hover:shadow-none md:text-base">
+                  Github
+                </a>
+              </div>
+              <p className=" text-sm  mb-4 cursor-pointer">{descriptionFr}</p>
             </div>
           </div>
         )}
@@ -55,7 +107,7 @@ const ProjectArticle: React.FC<project> = ({
         >
           <Image
             src={logo}
-            alt={`picture of the project ${title}`}
+            alt={`logo of the project ${title}`}
             className=" w-full h-full cursor-pointer  "
           ></Image>
         </div>
