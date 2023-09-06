@@ -52,15 +52,18 @@ const ProjectArticle: React.FC<project> = ({
   return (
     <>
       {isOpen && (
-        <div className="fixed top-0 right-0 w-full  bg-primary h-full flex items-center justify-center  bg-opacity-50 z-50 ">
-          <div className="bg-white p-8 flex flex-col   justify-evenly md:w-1/2  rounded h-full   shadow-md">
+        <div
+          onClick={closeModal}
+          className="fixed top-0 right-0 w-full  bg-primary h-full flex items-center justify-center  bg-opacity-50 z-50 "
+        >
+          <div className="bg-white p-8 flex flex-col   justify-evenly md:w-1/2 relative rounded h-full   shadow-md">
             <span
               className="absolute top-0 right-0 mt-2 mr-2 cursor-pointer text-3xl"
               onClick={closeModal}
             >
               &times;
             </span>
-            <div className=" border rounded-2xl w-full  max-h-80 overflow-hidden">
+            <div className=" border rounded-2xl w-full  max-h-80 overflow-hidden  ">
               <Image
                 src={picture}
                 alt={`picture of the project ${title}`}
@@ -92,7 +95,10 @@ const ProjectArticle: React.FC<project> = ({
                   Demo
                 </a>
               )}
-              <a className=" font-bold text-sm p-2 bg-white shadow-secondary border rounded ease-out duration-300 cursor-pointer hover:translate-x-1 hover:translate-y-1 hover:shadow-none md:text-base">
+              <a
+                href={linkGithub}
+                className=" font-bold text-sm p-2 bg-white shadow-secondary border rounded ease-out duration-300 cursor-pointer hover:translate-x-1 hover:translate-y-1 hover:shadow-none md:text-base"
+              >
                 Github
               </a>
             </div>
@@ -142,7 +148,10 @@ const ProjectArticle: React.FC<project> = ({
                 Demo
               </a>
             )}
-            <a className=" font-bold text-sm p-2 bg-white shadow-secondary border rounded ease-out duration-300 cursor-pointer hover:translate-x-1 hover:translate-y-1 hover:shadow-none md:text-base">
+            <a
+              href={linkGithub}
+              className=" font-bold text-sm p-2 bg-white shadow-secondary border rounded ease-out duration-300 cursor-pointer hover:translate-x-1 hover:translate-y-1 hover:shadow-none md:text-base"
+            >
               Github
             </a>
           </div>
