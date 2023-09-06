@@ -52,15 +52,15 @@ const ProjectArticle: React.FC<project> = ({
   return (
     <>
       {isOpen && (
-        <div className="fixed top-0 left-0 w-full bg-primary h-full flex items-center justify-center  bg-opacity-50 z-50">
-          <div className="bg-white p-8 flex flex-col justify-center  rounded h-full   shadow-md">
+        <div className="fixed top-0 right-0 w-full  bg-primary h-full flex items-center justify-center  bg-opacity-50 z-50 ">
+          <div className="bg-white p-8 flex flex-col   justify-evenly md:w-1/2  rounded h-full   shadow-md">
             <span
               className="absolute top-0 right-0 mt-2 mr-2 cursor-pointer text-3xl"
               onClick={closeModal}
             >
               &times;
             </span>
-            <div className=" w-full h-64 overflow-hidden">
+            <div className=" border rounded-2xl w-full  max-h-80 overflow-hidden">
               <Image
                 src={picture}
                 alt={`picture of the project ${title}`}
